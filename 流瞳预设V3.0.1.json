@@ -15,7 +15,7 @@
   "media_inlining": true,
   "min_p": 0,
   "n": 1,
-  "name": "流瞳预设V3.0",
+  "name": "流瞳预设V3.1",
   "names_behavior": 0,
   "new_chat_prompt": "",
   "new_example_chat_prompt": "",
@@ -276,6 +276,19 @@
       "injection_position": 0,
       "marker": false,
       "name": "🎭梗｜无",
+      "role": "system",
+      "system_prompt": false
+    },
+    {
+      "content": "【世界书梗库·使用边界】\n若世界书或角色卡提供了梗库（社区方言大全、玩梗教学、黑名单等条目），按下列边界使用；没有则整条忽略。\n\n一、谁能用\n1 主角内心：可以直接取用。她是外来的，脑子里的词本来就不属于这个世界。\n2 旁白锐评：可以取用，但不出现现代专有名词。\n3 世界内角色：一律不许。他们只能用世界里的说法——脏话、夸张、生活比喻。\n4 主角对白：可用现代句式，名词必须换成世界内的。\n\n二、怎么用\n1 先嫁接到世界内事物，再入句。不要整句照搬。\n2 一段最多一个梗动作。\n3 不解释、不接梗、不回味。\n4 梗后面必须带信息：读者多知道一件事。\n\n三、冲突时\n1 与「🎭梗密度」冲突：听密度的。\n2 与「✒️文风」09／10 节冲突：听文风的。\n3 梗库里的教学、分类、黑名单条款，是说明书，不是台词素材，不许被角色念出来。\n4 与现代圈层强绑定的梗（谷子、徽章、直播、cos、三国台词），在非现代背景下默认不用，\n  除非主角内心点名。",
+      "enabled": true,
+      "forbid_overrides": false,
+      "identifier": "gloss",
+      "injection_depth": 4,
+      "injection_order": 100,
+      "injection_position": 0,
+      "marker": false,
+      "name": "📚世界书梗库边界(用梗库时开)",
       "role": "system",
       "system_prompt": false
     },
@@ -708,6 +721,10 @@
           "enabled": false
         },
         {
+          "identifier": "gloss",
+          "enabled": true
+        },
+        {
           "identifier": "sep_body",
           "enabled": true
         },
@@ -973,7 +990,7 @@
       {
         "disabled": false,
         "findRegex": "/<\\/?content>/g",
-        "id": "b2f24c86-f41c-42ab-ac59-faf8ec4b92ef",
+        "id": "f0ed1261-668b-4e53-9b8c-211ef7d20b1c",
         "markdownOnly": true,
         "maxDepth": null,
         "minDepth": null,
@@ -990,7 +1007,7 @@
       {
         "disabled": false,
         "findRegex": "/<state>([\\s\\S]*?)<\\/state>/g",
-        "id": "d25a5ffc-b1d1-4195-b6a5-cd5068a1b9fa",
+        "id": "df3bf2bf-89d9-4cb8-8e6f-334f43446bfb",
         "markdownOnly": true,
         "maxDepth": null,
         "minDepth": null,
@@ -1007,7 +1024,7 @@
       {
         "disabled": false,
         "findRegex": "/<UpdateVariable>[\\s\\S]*?<\\/UpdateVariable>/g",
-        "id": "6fbe3142-e518-4c68-af7b-ee6056705d76",
+        "id": "e703047e-e41c-45de-a025-0daff3f93503",
         "markdownOnly": false,
         "maxDepth": null,
         "minDepth": null,
@@ -1024,7 +1041,7 @@
       {
         "disabled": false,
         "findRegex": "/<Analysis>[\\s\\S]*?<\\/Analysis>/g",
-        "id": "76356f4a-8c2a-4709-8e1c-a071d4927c45",
+        "id": "985a406e-c217-40d2-a1c8-7f03c723e1f1",
         "markdownOnly": false,
         "maxDepth": null,
         "minDepth": null,
@@ -1039,7 +1056,7 @@
       {
         "disabled": false,
         "findRegex": "/<JSONPatch>[\\s\\S]*?<\\/JSONPatch>/g",
-        "id": "0c3c0b97-b4b2-4eaa-9a2a-69313f160562",
+        "id": "2b1a2eed-25bf-4f41-90de-8095c95b77cc",
         "markdownOnly": false,
         "maxDepth": null,
         "minDepth": null,
